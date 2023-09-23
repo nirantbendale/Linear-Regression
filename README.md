@@ -14,7 +14,7 @@ This project uses the scikit-learn library to predict housing prices in the Bost
 `boston = load_boston()` <br>
 `data = pd.DataFrame(data=boston.data, columns=boston.feature_names)`<br>
 `data['PRICE'] = boston.target`<br>
-
+[['.png]]
 ### We load the Boston Housing Prices dataset using load_boston() and create a Pandas DataFrame to store the data. We also add a 'PRICE' column to the DataFrame to hold the target variable (housing prices). 
 
 `X = data[['RM', 'LSTAT', 'CRIM']]`  # Select features and target variable  <br>
