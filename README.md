@@ -11,7 +11,6 @@ This project uses the scikit-learn library to predict housing prices in the Bost
 `from sklearn.metrics import mean_squared_error, r2_score`  # For model evaluation <br>
 
 ### We begin by importing the required libraries, including NumPy for numerical operations, Pandas for data manipulation, Matplotlib for data visualization, and scikit-learn functions for loading data, model building, and evaluation.
-Load the Boston Housing Prices dataset <br>
 `boston = load_boston()` <br>
 `data = pd.DataFrame(data=boston.data, columns=boston.feature_names)`<br>
 `data['PRICE'] = boston.target`<br>
