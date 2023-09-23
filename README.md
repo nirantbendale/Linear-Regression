@@ -25,7 +25,7 @@ PTRATIO: Pupil-teacher ratio by town. \
 B: Proportion of residents of African American descent. \
 LSTAT: Percentage of lower-status population. 
 ### 2.3 Target Variable
-The target variable in this project is: \
+The target variable in this project is:
 
 PRICE: Median value of owner-occupied homes (in thousands of dollars).
 ## Chapter 3: Exploratory Data Analysis (EDA)
@@ -36,14 +36,15 @@ Before diving into modeling, it's crucial to understand the dataset through Expl
 We start by calculating summary statistics of the dataset, including mean, standard deviation, minimum, maximum, and quartiles for each feature. This provides an initial understanding of the data's distribution and scale.
 
 ### 3.3 Correlation Analysis
-To understand relationships between features, we create a correlation heatmap. The heatmap displays correlation coefficients between pairs of features. High positive or negative correlations can indicate potential multicollinearity or influential features for predicting housing prices.
+To understand relationships between features, we create a correlation heatmap. The heatmap displays correlation coefficients between pairs of features. High positive or negative correlations can indicate potential multicollinearity or influential features for predicting housing prices. \
+![Heatmap](linr-heatmap.png)
 
 ### 3.4 Feature Distributions
-We visualize feature distributions by plotting histograms for key features like 'RM' (average number of rooms), 'LSTAT' (percentage of lower-status population), 'CRIM' (crime rate), and the target variable 'PRICE.' This helps us identify feature characteristics and potential outliers.
-
+We visualize feature distributions by plotting histograms for key features like 'RM' (average number of rooms), 'LSTAT' (percentage of lower-status population), 'CRIM' (crime rate), and the target variable 'PRICE.' This helps us identify feature characteristics and potential outliers. \
+![Distributions](linr-dist.png)
 ### 3.5 Feature vs. Target Analysis
-We create scatter plots of key features ('RM', 'LSTAT', 'CRIM') against the target variable 'PRICE.' These plots provide insights into the relationships between individual features and housing prices. For instance, 'RM' shows a positive correlation with price, while 'LSTAT' shows a negative correlation.
-
+We create scatter plots of key features ('RM', 'LSTAT', 'CRIM') against the target variable 'PRICE.' These plots provide insights into the relationships between individual features and housing prices. For instance, 'RM' shows a positive correlation with price, while 'LSTAT' shows a negative correlation. \
+![Scatter](linr-scat.png)
 ## Chapter 4: Linear Regression Modeling
 ### 4.1 Introduction to Linear Regression
 Linear Regression is a simple yet powerful algorithm for regression tasks. It models the relationship between a dependent variable (in this case, 'PRICE') and one or more independent variables (features) by fitting a linear equation to the observed data.
@@ -63,17 +64,21 @@ To assess the model's performance, we calculate two important metrics:
 2. R-squared (R2) Score: This quantifies the proportion of the variance in the target variable that is predictable from the features. A higher R2 score suggests a better model fit. 
 ## Chapter 5: Results and Visualization
 ### 5.1 Coefficients and Metrics
-We print the coefficients of the trained Linear Regression model, providing insights into how each feature contributes to predicting housing prices. Additionally, we display the calculated MSE and R2 score to quantify the model's performance.
+We print the coefficients of the trained Linear Regression model, providing insights into how each feature contributes to predicting housing prices. Additionally, we display the calculated MSE and R2 score to quantify the model's performance. 
+
+**Linear Regression Coefficients: [ 5.59783703 -0.56020274 -0.12416262]** \
+**Mean Squared Error (MSE): 32.28** \
+**R-squared (R2) Score: 0.56**
 
 ### 5.2 Visualization of Predictions
-We create a scatter plot to visualize the relationship between actual and predicted housing prices. This plot helps us assess how well the model's predictions align with the true values, providing a visual representation of the model's performance.
-
+We create a scatter plot to visualize the relationship between actual and predicted housing prices. This plot helps us assess how well the model's predictions align with the true values, providing a visual representation of the model's performance. \
+![Perf](linr-perf.png)
 ### Chapter 6: Conclusion
 The "Boston Housing Prices Prediction with Linear Regression" project demonstrates a step-by-step approach to predicting housing prices using Linear Regression. It begins with data exploration and visualization, followed by model building, training, and evaluation. The project highlights the importance of EDA in understanding the dataset and selecting relevant features. The Linear Regression model provides insights into feature importance and predicts housing prices with reasonable accuracy.
 
 This project serves as a foundational example for regression tasks, showcasing the application of machine learning to real-world datasets and the importance of data analysis in the modeling process.
 
-## Actual project code with comments explaning each step
+## Actual project code with comments explaining each step
 
 ### Importing the necessary libraries 
 `import numpy as np`  # For numerical operations <br>
