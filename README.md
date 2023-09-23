@@ -1,7 +1,7 @@
 # Linear-Regression
 This project uses the scikit-learn library to predict housing prices in the Boston area based on various features such as the average number of rooms per dwelling (RM), the percentage of lower-status population (LSTAT), and the crime rate (CRIM). Linear regression is employed as the predictive model.
 
-## Importing the neccesary libraries <br>
+## Importing the necessary libraries <br>
 `import numpy as np`  # For numerical operations <br>
 `import pandas as pd`  # For data manipulation <br>
 `import matplotlib.pyplot as plt`  # For data visualization <br>
